@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Main — demonstracja CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="main-bg">
+  <header class="site-header">
+    <h1 style="color:#ffffff">main.html — zmiany rozmiaru tekstu, box-model, pozycjonowanie</h1>
+    <p class="subtitle">Ten plik używa <code>&lt;link rel="stylesheet"&gt;</code> do style.css</p>
+  </header>
+
+  <main class="content">
+    <section>
+      <h2 style="color:#e6f2ff">2) Różne jednostki rozmiaru tekstu</h2>
+      <p class="ex-em">Tekst ustawiony w <strong>em</strong> (2em).</p>
+      <p class="ex-px">Tekst ustawiony w <strong>px</strong> (20px).</p>
+      <p class="ex-pt">Tekst ustawiony w <strong>pt</strong> (20pt).</p>
+      <p class="ex-percent">Tekst ustawiony w <strong>%</strong> (200%).</p>
+    </section>
+
+    <section>
+      <h2 style="color:#e6f2ff">5) Box-model, pozycjonowanie</h2>
+
+      <div class="box-container">
+        <div class="box relative-box">
+          <p>Box: <code>position: relative</code></p>
+          <div class="box absolute-child">Dziecko absolutne (position: absolute)</div>
+        </div>
+
+        <div class="box float-box">
+          <p>Box ze <code>float: left</code></p>
+        </div>
+
+        <div class="box fixed-box">
+          <p>Box: <code>position: fixed</code> (przykładowy pasek)</p>
+        </div>
+      </div>
+
+      <p class="ex-border">7) Przykład reguły border (border-width / border-style / border-color)</p>
+    </section>
+
+    <section>
+      <h2 style="color:#e6f2ff">4) Przykłady selektorów</h2>
+      <div id="unique">
+        <p class="inner important">Selektor ID (#unique) zawiera element z klasą <code>.important</code>.</p>
+        <div class="container">
+          <p>Przykład selektora zagnieżdżenia: <code>.container .inner</code></p>
+          <p class="child">Przykład selektora bezpośredniego potomka: <code>#unique &gt; .container &gt; .child</code></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p style="color:#cbd5e1">Powrót: <a href="index.html" style="color:#a6e3ff">index</a> • <a href="other.html" style="color:#ffd966">other</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,195 @@
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; color: #f3f4f6; background: #071017; }
+
+/* ====== Punkt 3 ====== */
+body.main-bg {
+  background-image: url("bg_main.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: scroll;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 1rem;
+  color: #f3f4f6;
+}
+
+body.other-bg {
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0) 50%, #1a1a1a 50%), 
+    url("bg_other.jpg"); 
+  
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 100%, 200px 120px;
+  background-position: top left, top left;
+  
+  min-height: 100vh;
+  padding: 1rem;
+  color: #f3f4f6;
+}
+
+
+.site-header, header { margin-bottom: 1rem; }
+h1 { margin: 0 0 0.5rem 0; color: #ffffff; }
+.subtitle { margin-top: 0.2rem; color: #cbd5e1; }
+
+/* ====== Punkt 2 ====== */
+.ex-em { font-size: 2em; color: #f8fafc; }      
+.ex-px { font-size: 20px; color: #f8fafc; }     
+.ex-pt { font-size: 20pt; color: #f8fafc; }      
+.ex-percent { font-size: 200%; color: #f8fafc; } 
+
+/* ====== Punkt 5 ====== */
+.box-container { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+
+.box {
+  background: linear-gradient(#071728,#0b2735); 
+  color: #eef8ff;                              
+  border-radius: 6px;
+  padding: 14px;
+  margin: 10px 0;
+  width: 320px;
+  height: auto;
+  border: 3px solid #1f6fb7;
+}
+
+/* Punkt 7: border rozbity (border-width, border-style, border-color) */
+.ex-border {
+  border-width: 6px;
+  border-style: dashed;
+  border-color: #7a52ff;
+  padding: 0.6rem;
+  border-radius: 6px;
+  display: inline-block;
+  color: #fff;
+}
+
+.relative-box { position: relative; }
+.absolute-child {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: #09323f;
+  color: #e6fcff;
+  padding: 6px;
+  border: 1px solid #0fb3c6;
+  border-radius: 4px;
+}
+
+.float-box { float: left; margin-right: 12px; }
+
+.fixed-box {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  background: #111827;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.6);
+}
+
+/* ====== Punkt 4: selektory ====== */
+#unique {
+  background: linear-gradient(90deg,#073042,#052437);
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 0.6rem;
+  color: #e6f2ff;
+}
+
+.important { color: #fefefe; font-weight: 700; }
+
+.container .inner { padding: 8px; background: rgba(255,255,255,0.02); color:#dbeafe; }
+
+#unique > .container > .child { font-style: italic; color: #cbd5e1; }
+
+/* ====== Punkt 6: formatowanie tekstu ====== */
+p, li, td {
+  line-height: 1.45;
+  font-size: 16px;
+  color: #f3f4f6;
+}
+strong { font-weight: 800; color:#fff; }
+.small { font-size: 12px; color:#dbeafe; }
+.serif { font-family: "Times New Roman", Times, serif; color:#f3f4f6; }
+.decoration { text-decoration: underline dotted; color:#f3f4f6; }
+
+/* ====== Punkt 8: stylowanie tabel ====== */
+.styled-table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  color: #f3f4f6; 
+  background: linear-gradient(90deg,#847bff,#489bd3);
+}
+.styled-table thead th {
+  background: linear-gradient(#1f6fb7,#0f4b7a);
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+.styled-table tbody td {
+  padding: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  color: #e6f2ff;
+}
+.styled-table tbody tr:nth-child(odd) {
+  background: rgba(255,255,255,0.02);
+}
+.styled-table tbody tr:nth-child(even) {
+  background: rgba(255,255,255,0.01);
+}
+
+/* ====== Punkt 9: wybrane pseudoklasy i pseudoelementy ====== */
+/* Pseudoklasa :focus dla elementów interaktywnych */
+a.focusable:focus {
+  outline: 3px solid #ffa726;
+  background: rgba(255,167,38,0.06);
+  color: #fff;
+}
+
+/* Pseudoklasa :nth-child (przykład) - listy pasujące do wzoru */
+.striped-list li:nth-child(odd) {
+  background: rgba(79, 160, 236, 0.438);
+  padding: 6px;
+}
+
+/* Pseudoelementy ::before i ::after (dodawanie treści dekoracyjnej) */
+.with-before::before {
+  content: "★ ";
+  color: #f2a900;
+  margin-right: 6px;
+}
+
+.with-after::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  vertical-align: middle;
+  background-image: url("icon.png");
+  background-repeat: no-repeat;
+  background-size: contain; /* lub cover */
+  background-position: center;
+}
+
+/* Pseudoelement marker */
+.striped-list li::marker {
+  color: #3dd11f;
+  font-weight: 700;
+}
+
+/* ====== Drobne style nawigacji powrotnej i layout ====== */
+.content { padding: 0.6rem; }
+.site-footer, footer { margin-top: 1.2rem; color: #cbd5e1; }
+
+/* ====== Dodatkowe reguły demonstracyjne tabel i elementów ====== */
+table.special_table {
+  border: 2px solid #d9534f;
+  background: rgba(255,255,255,0.02);
+  width: 60%;
+  color: #f3f4f6;
+}

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Strona HTML5 przedstawiająca rozwiązanie listy 2.">
+    <meta name="keywords" content="HTML5, lista 2, formatowanie, listy, tabele, formularze, przykład">
+    <meta name="author" content="Student / Jakub Kacprzyk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="pl">
+    <meta name="robots" content="index, follow">
+<title>Lista 2</title>
+</head>
+
+<body>
+  <a id="top"></a>
+  <h1>Rozwiązanie listy 2</h1>
+  <header>
+    <br>
+    <nav>
+      <ul>
+        <li><a href="#formatting">Przejdź do znaków specjalnych i formatowania tekstu</a></li>
+        <li><a href="#lists">Przejdź do list</a></li>
+        <li><a href="#table">Przejdź do tabeli</a></li>
+        <li><a href="#form">Przejdź do formularza</a></li>
+      </ul>
+    </nav>
+    <br>
+  </header>
+
+  <main>
+    <section id="formatting">
+      <h2>Znaki specjalne i formatowanie tekstu</h2>
+      
+      <h3>Znaki specjalne</h3>
+      <p>&lt; -- znak mniejszości (<code>&amp;lt;</code>)</p>
+      <p>&gt; -- znak większości (<code>&amp;gt;</code>)</p>
+      <p>&amp; -- ampersand (<code>&amp;amp;</code>)</p>
+      <p>&copy; -- znak copyright (<code>&amp;copy;</code>)</p>
+      <p>&euro; -- symbol euro (<code>&amp;euro;</code>)</p>
+
+      <h3>Formatowanie tekstu</h3>
+      <p>W poniższych przykładach użyto różnych elementów formatowania:</p>
+      <p>Przykład <strong>pogrubienia</strong> za pomocą &lt;strong&gt;.</p>
+      <p>Przykład <em>kursywy/emfazowania</em> za pomocą &lt;em&gt;.</p>
+      <p>Fragment <code>kod()</code> wewnątrz tekstu z użyciem &lt;code&gt;.</p>
+      <p>Pogrubnienie uwagi: <mark>zaznaczony tekst</mark> z &lt;mark&gt;.</p>
+      <p>Mniejszy zapis: <small>tekst pomocniczy</small> w &lt;small&gt;.</p>
+    </section>
+    
+    <br>
+
+    <section id="lists">
+      <h2>Listy: uporządkowane, nieuporządkowane, definicji i zagnieżdżone</h2>
+      
+      <h3>Lista uporządkowana</h3>
+      <ol start="1">
+        <li>Pierwszy element</li>
+        <li>Drugi element
+          <ol type="a">
+            <li>podpunkt a</li>
+            <li>podpunkt b</li>
+          </ol>
+        </li>
+        <li>Trzeci element</li>
+      </ol>
+
+      <h3>Lista nieuporzadkowana</h3>
+      <ul>
+        <li>Pierwszy element</li>
+        <li>Drugi element
+          <ul>
+            <li>podpunkt a</li>
+            <li>podpunkt b</li>
+          </ul>
+        </li>
+        <li>Trzeci element</li>
+      </ul>
+
+      <h3>Zagnieżdżona lista</h3>
+      <ul>
+        <li>Poziom 1 - A
+          <ul>
+            <li>Poziom 2 - AA
+              <ul>
+                <li>Poziom 3 - AAA
+                </li>
+                <li>Poziom 3 - AAB
+                  <ul>
+                    <li>Poziom 4 - AABA</li>
+                    <li>Poziom 4 - AABB</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Poziom 2 - AB
+              <ul>
+                <li>Poziom 3 - ABA
+                  <ul>
+                    <li>Poziom 4 - ABAA</li>
+                    <li>Poziom 4 - ABAB</li>
+                  </ul>
+                </li>
+                <li>Poziom 3 - ABB</li>
+              </ul>
+            </li>
+            <li>Poziom 2 - AC</li>
+          </ul>
+        </li>
+        <li>Poziom 1 - B
+          <ul>
+            <li>Poziom 2 - BA</li>
+            <li>Poziom 2 - BB</li>
+          </ul>
+        </li>
+        <li>Poziom 1 - C</li>
+      </ul>
+
+      <ol type="1">
+        <li>Punkt pierwszy
+          <ol type="a">
+            <li>Pierwszy podpunkt</li>
+            <li>Drugi podpunkt</li>
+            <li>Trzeci podpunkt</li>
+          </ol>
+        </li>
+        <li>Punkt drugi
+          <ol type="a">
+            <li>Pierwszy podpunkt</li>
+            <li>Drugi podpunkt</li>
+          </ol>
+        </li>
+        <li>Punkt trzeci
+          <ol type="a">
+            <li>Pierwszy podpunkt</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h3>Lista definicji</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Język znaczników do tworzenia stron WWW.</dd>
+        <dt>Element semantyczny</dt>
+        <dd>Element, który niesie znaczenie (np. &lt;article&gt;, &lt;section&gt;).</dd>
+        <dt>Formularz</dt>
+        <dd>Interfejs do wprowadzania danych przez użytkownika (&lt;form&gt;).</dd>
+      </dl>
+    </section>
+
+    <br>
+
+    <section id="table">
+      <h2>Tabela z nagłówkiem i stopką oraz scaleniami</h2>
+
+      <table border="1">
+        <caption>Przykładowa tabela 5x5 z &lt;thead&gt; i &lt;tfoot&gt;</caption>
+        <thead>
+          <tr>
+            <th>Kolumna A</th>
+            <th>Kolumna B</th>
+            <th>Kolumna C</th>
+            <th>Kolumna D</th>
+            <th>Kolumna E</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Wiersz 1</th>
+            <td colspan="2">Komórka scalona (colspan=2)</td>
+            <td>Komórka 1.4</td>
+            <td>Komórka 1.5</td>
+          </tr>
+          <tr>
+            <th scope="row">Wiersz 2</th>
+            <td>Komórka 2.2</td>
+            <td>Komórka 2.3</td>
+            <td colspan="2" rowspan="2">Duża komórka zajmująca 2 kolumny i 2 wiersze</td>
+          </tr>
+          <tr>
+            <th scope="row">Wiersz 3</th>
+            <td>Komórka 3.2</td>
+            <td>Komórka 3.3</td>
+          </tr>
+          <tr>
+            <th scope="row">Wiersz 4</th>
+            <td>4.2</td>
+            <td rowspan="2">Komórka scalona <br> (rowspan=2)</td>
+            <td>4.4</td>
+            <td>4.5</td>
+          </tr>
+          <tr>
+            <th scope="row">Wiersz 5</th>
+            <td>5.2</td>
+            <td>5.4</td>
+            <td>5.5</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5">Stopka tabeli: podsumowanie danych lub inne informacje.</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <br>
+
+    <section id="form">
+      <h2>Formularz zawierający wiele typów pól</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Dane użytkownika</legend>
+
+          <label for="fname">Imię (text):</label>
+          <input type="text" id="fname" name="fname"><br>
+
+          <label for="pwd">Hasło (password):</label>
+          <input type="password" id="pwd" name="pwd"><br>
+
+          <label for="email">E-mail (email):</label>
+          <input type="email" id="email" name="email"><br>
+
+          <label for="tel">Telefon (tel):</label>
+          <input type="tel" id="tel" name="tel"><br>
+
+          <label for="web">Strona WWW (url):</label>
+          <input type="url" id="web" name="web"><br>
+
+          <label for="age">Wiek (number):</label>
+          <input type="number" id="age" name="age" min="0" max="150"><br>
+
+          <label for="vol">Głośność (range):</label>
+          <input type="range" id="vol" name="vol" min="0" max="10"><br>
+
+          <label for="bdate">Data urodzenia (date):</label>
+          <input type="date" id="bdate" name="bdate"><br>
+
+          <label for="appt">Godzina spotkania (time):</label>
+          <input type="time" id="appt" name="appt"><br>
+
+          <label for="meeting">Data i godzina (datetime-local):</label>
+          <input type="datetime-local" id="meeting" name="meeting"><br>
+
+          <label for="favcolor">Ulubiony kolor (color):</label>
+          <input type="color" id="favcolor" name="favcolor"><br>
+
+          <label for="resume">CV (file):</label>
+          <input type="file" id="resume" name="resume"><br>
+
+          <label>Pole wyboru (checkbox):</label>
+          <input type="checkbox" id="news" name="news" value="1"><label for="news">Chcę otrzymywać aktualności</label><br>
+
+          <fieldset>
+            <legend>Wybierz opcję (radio):</legend>
+            <input type="radio" id="opt1" name="opt" value="1"><label for="opt1">Opcja 1</label>
+            <input type="radio" id="opt2" name="opt" value="2"><label for="opt2">Opcja 2</label>
+          </fieldset>
+
+          <label for="about">O sobie (textarea):</label><br>
+          <textarea id="about" name="about" rows="4" cols="40"></textarea><br>
+
+          <label for="country">Kraj (select):</label>
+          <select id="country" name="country">
+            <option value="pl">Polska</option>
+            <option value="de">Niemcy</option>
+            <option value="uk">Wielka Brytania</option>
+          </select><br>
+
+          <input type="hidden" name="token" value="abc123">
+
+          <input type="submit" value="Wyślij">
+          <input type="reset" value="Wyczyść">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <footer>
+    <p>Stopka strony. Powrót: <a href="#top">na początek</a>.</p>
+    <address>Kontakt: przyklad@domena.pl</address>
+  </footer>
+</body>
+
+</html>

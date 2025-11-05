@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Other — tła, tabele, pseudoklasy/pseudoelementy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="other-bg">
+  <header>
+    <h1 style="color:#ffffff">other.html — tła, tabelki, pseudoklasy i pseudoelementy</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2 style="color:#e6f2ff">3) Tło — powtarzanie i ustalony rozmiar w px</h2>
+      <p style="color:#dbeafe">To tło używa <code>background-repeat: repeat</code> i <code>background-size</code> w px (zobacz style.css dla reguł).</p>
+    </section>
+
+    <section>
+      <h2 style="color:#e6f2ff">8) Stylowanie tabel</h2>
+      <table class="styled-table">
+        <thead>
+          <tr><th>Imię</th><th>Wiek</th><th>Miasto</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ala</td><td>23</td><td>Warszawa</td></tr>
+          <tr><td>Bartek</td><td>34</td><td>Kraków</td></tr>
+          <tr><td>Celina</td><td>29</td><td>Poznań</td></tr>
+          <tr><td>Damian</td><td>41</td><td>Gdańsk</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2 style="color:#e6f2ff">9) Pseudoklasy i pseudoelementy</h2>
+
+      <p>
+        <a href="#" class="focusable">Kliknij lub użyj TAB aby ustawić :focus na tym linku</a>
+      </p>
+
+      <ul class="striped-list" style="color:#f3f4f6">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+      </ul>
+
+      <h3 class="with-before" style="color:#fff">Nagłówek z pseudoelementem ::before</h3>
+      <p class="with-after" style="color:#e6f2ff">Akapit który ma pseudoelement <code>::after</code> (dodaje ikonę).</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p style="color:#cbd5e1">Powrót: <a href="index.html" style="color:#a6e3ff">index</a> • <a href="main.html" style="color:#ffd966">main</a></p>
+  </footer>
+</body>
+</html>
