@@ -1,0 +1,169 @@
+2025-04-04 03:01:27,125 - ERROR - Nie znaleziono ffmpeg w systemie!
+2025-04-04 03:06:12,759 - INFO - Rozpoczêcie konwersji 6 plików do formatu webm
+2025-04-04 03:07:05,786 - INFO - Konwersja udana: .\filmy\file_example_AVI_1280_1_5MG.avi -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-030612-file_example_AVI_1280_1_5MG.webm
+2025-04-04 03:08:07,549 - INFO - Konwersja udana: .\filmy\file_example_MP4_1280_10MG.mp4 -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-030705-file_example_MP4_1280_10MG.webm
+2025-04-04 03:08:08,058 - INFO - Konwersja udana: .\muzyka\file_example_MP3_2MG.mp3 -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-030807-file_example_MP3_2MG.webm
+2025-04-04 03:08:08,228 - INFO - Konwersja udana: .\muzyka\file_example_WAV_2MG.wav -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-030808-file_example_WAV_2MG.webm
+2025-04-04 03:08:08,231 - WARNING - ImageMagick nie znaleziony, próba u¿ycia ffmpeg
+2025-04-04 03:08:11,445 - INFO - Konwersja udana: .\zdjecia\file_example_JPG_2500kB.jpg -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-030808-file_example_JPG_2500kB.webm
+2025-04-04 03:08:11,448 - WARNING - ImageMagick nie znaleziony, próba u¿ycia ffmpeg
+2025-04-04 03:08:12,089 - INFO - Konwersja udana: .\zdjecia\file_example_PNG_2100kB.png -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-030811-file_example_PNG_2100kB.webm
+2025-04-04 03:08:12,090 - INFO - Zakoñczono: 6/6 plików przekonwertowanych pomyœlnie
+2025-04-04 03:15:43,951 - INFO - Rozpoczêcie konwersji 12 plików do formatu webm
+2025-04-04 03:16:29,336 - INFO - Konwersja udana: .\converted\20250404-030612-file_example_AVI_1280_1_5MG.webm -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-031543-20250404-030612-file_example_AVI_1280_1_5MG.webm
+2025-04-04 03:17:19,398 - INFO - Konwersja udana: .\converted\20250404-030705-file_example_MP4_1280_10MG.webm -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-031629-20250404-030705-file_example_MP4_1280_10MG.webm
+2025-04-04 03:17:19,877 - INFO - Konwersja udana: .\converted\20250404-030807-file_example_MP3_2MG.webm -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-031719-20250404-030807-file_example_MP3_2MG.webm
+2025-04-04 03:17:21,864 - INFO - Konwersja udana: .\converted\20250404-030808-file_example_JPG_2500kB.webm -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-031719-20250404-030808-file_example_JPG_2500kB.webm
+2025-04-04 03:17:22,025 - INFO - Konwersja udana: .\converted\20250404-030808-file_example_WAV_2MG.webm -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-031721-20250404-030808-file_example_WAV_2MG.webm
+2025-04-04 03:17:22,426 - INFO - Konwersja udana: .\converted\20250404-030811-file_example_PNG_2100kB.webm -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-031722-20250404-030811-file_example_PNG_2100kB.webm
+2025-04-04 03:18:14,844 - INFO - Konwersja udana: .\filmy\file_example_AVI_1280_1_5MG.avi -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-031722-file_example_AVI_1280_1_5MG.webm
+2025-04-04 03:19:16,140 - INFO - Konwersja udana: .\filmy\file_example_MP4_1280_10MG.mp4 -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-031814-file_example_MP4_1280_10MG.webm
+2025-04-04 03:19:16,635 - INFO - Konwersja udana: .\muzyka\file_example_MP3_2MG.mp3 -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-031916-file_example_MP3_2MG.webm
+2025-04-04 03:19:16,804 - INFO - Konwersja udana: .\muzyka\file_example_WAV_2MG.wav -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-031916-file_example_WAV_2MG.webm
+2025-04-04 03:19:17,072 - ERROR - Nieobs³ugiwany format wyjœciowy dla ImageMagick: webm
+2025-04-04 03:19:17,072 - ERROR - B³¹d konwersji: .\zdjecia\file_example_JPG_2500kB.jpg
+2025-04-04 03:19:17,136 - ERROR - Nieobs³ugiwany format wyjœciowy dla ImageMagick: webm
+2025-04-04 03:19:17,136 - ERROR - B³¹d konwersji: .\zdjecia\file_example_PNG_2100kB.png
+2025-04-04 03:19:17,136 - INFO - Zakoñczono: 10/12 plików przekonwertowanych pomyœlnie
+2025-04-04 03:21:20,088 - INFO - Rozpoczêcie konwersji 6 plików do formatu data\webp
+2025-04-04 03:21:20,089 - ERROR - Nieobs³ugiwany format wyjœciowy dla ffmpeg: data\webp
+2025-04-04 03:21:20,090 - ERROR - B³¹d konwersji: .\data\filmy\file_example_AVI_1280_1_5MG.avi
+2025-04-04 03:21:20,090 - ERROR - Nieobs³ugiwany format wyjœciowy dla ffmpeg: data\webp
+2025-04-04 03:21:20,090 - ERROR - B³¹d konwersji: .\data\filmy\file_example_MP4_1280_10MG.mp4
+2025-04-04 03:21:20,091 - ERROR - Nieobs³ugiwany format wyjœciowy dla ffmpeg: data\webp
+2025-04-04 03:21:20,091 - ERROR - B³¹d konwersji: .\data\muzyka\file_example_MP3_2MG.mp3
+2025-04-04 03:21:20,091 - ERROR - Nieobs³ugiwany format wyjœciowy dla ffmpeg: data\webp
+2025-04-04 03:21:20,092 - ERROR - B³¹d konwersji: .\data\muzyka\file_example_WAV_2MG.wav
+2025-04-04 03:21:20,169 - ERROR - Nieobs³ugiwany format wyjœciowy dla ImageMagick: data\webp
+2025-04-04 03:21:20,169 - ERROR - B³¹d konwersji: .\data\zdjecia\file_example_JPG_2500kB.jpg
+2025-04-04 03:21:20,236 - ERROR - Nieobs³ugiwany format wyjœciowy dla ImageMagick: data\webp
+2025-04-04 03:21:20,237 - ERROR - B³¹d konwersji: .\data\zdjecia\file_example_PNG_2100kB.png
+2025-04-04 03:21:20,237 - INFO - Zakoñczono: 0/6 plików przekonwertowanych pomyœlnie
+2025-04-04 03:21:39,940 - INFO - Rozpoczêcie konwersji 6 plików do formatu webp
+2025-04-04 03:22:18,258 - INFO - Konwersja udana: data\filmy\file_example_AVI_1280_1_5MG.avi -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-032139-file_example_AVI_1280_1_5MG.webp
+2025-04-04 03:22:57,673 - INFO - Konwersja udana: data\filmy\file_example_MP4_1280_10MG.mp4 -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-032218-file_example_MP4_1280_10MG.webp
+2025-04-04 03:22:57,706 - ERROR - B³¹d ffmpeg: ffmpeg version 7.1.1-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mp3, from 'data\muzyka\file_example_MP3_2MG.mp3':
+  Metadata:
+    Encoded by      : LAME in FL Studio 20
+    BPM (beats per minute): 120
+    date            : 2018
+  Duration: 00:00:53.94, start: 0.025057, bitrate: 320 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 320 kb/s
+      Metadata:
+        encoder         : LAME3.100
+Output #0, webp, to 'C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-032257-file_example_MP3_2MG.webp':
+[out#0/webp @ 0000020188229640] Output file does not contain any stream
+Error opening output file C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-032257-file_example_MP3_2MG.webp.
+Error opening output files: Invalid argument
+
+2025-04-04 03:22:57,706 - ERROR - B³¹d konwersji: data\muzyka\file_example_MP3_2MG.mp3
+2025-04-04 03:22:57,761 - ERROR - B³¹d ffmpeg: ffmpeg version 7.1.1-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[aist#0:0/pcm_s16le @ 00000250a81cabc0] Guessed Channel Layout: stereo
+Input #0, wav, from 'data\muzyka\file_example_WAV_2MG.wav':
+  Metadata:
+    BPM (beats per minute): 120
+    Encoded by      : LAME in FL Studio 20
+    date            : 2018
+  Duration: 00:00:11.93, bitrate: 1411 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, stereo, s16, 1411 kb/s
+Output #0, webp, to 'C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-032257-file_example_WAV_2MG.webp':
+[out#0/webp @ 00000250a81cae80] Output file does not contain any stream
+Error opening output file C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-032257-file_example_WAV_2MG.webp.
+Error opening output files: Invalid argument
+
+2025-04-04 03:22:57,762 - ERROR - B³¹d konwersji: data\muzyka\file_example_WAV_2MG.wav
+2025-04-04 03:23:00,365 - INFO - Konwersja udana: data\zdjecia\file_example_JPG_2500kB.jpg -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-032257-file_example_JPG_2500kB.webp
+2025-04-04 03:23:00,752 - INFO - Konwersja udana: data\zdjecia\file_example_PNG_2100kB.png -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-032300-file_example_PNG_2100kB.webp
+2025-04-04 03:23:00,759 - INFO - Zakoñczono: 4/6 plików przekonwertowanych pomyœlnie
+2025-04-04 03:54:13,613 - ERROR - Nie znaleziono ffmpeg w systemie!
+2025-04-04 04:03:17,132 - ERROR - Nie znaleziono ffmpeg w systemie!
+2025-04-04 04:03:43,924 - ERROR - Nie znaleziono ffmpeg w systemie!
+2025-04-04 04:05:06,235 - ERROR - Nie znaleziono ffmpeg w systemie!
+2025-04-04 12:36:18,862 - INFO - Rozpoczêcie konwersji 6 plików do formatu webm
+2025-04-04 12:37:12,688 - INFO - Konwersja udana: data\filmy\file_example_AVI_1280_1_5MG.avi -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-123618-file_example_AVI_1280_1_5MG.webm
+2025-04-04 12:38:13,743 - INFO - Konwersja udana: data\filmy\file_example_MP4_1280_10MG.mp4 -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-123712-file_example_MP4_1280_10MG.webm
+2025-04-04 12:38:14,235 - INFO - Konwersja udana: data\muzyka\file_example_MP3_2MG.mp3 -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-123813-file_example_MP3_2MG.webm
+2025-04-04 12:38:14,411 - INFO - Konwersja udana: data\muzyka\file_example_WAV_2MG.wav -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-123814-file_example_WAV_2MG.webm
+2025-04-04 12:38:14,675 - ERROR - Nieobs³ugiwany format wyjœciowy dla ImageMagick: webm
+2025-04-04 12:38:14,676 - ERROR - B³¹d konwersji: data\zdjecia\file_example_JPG_2500kB.jpg
+2025-04-04 12:38:14,738 - ERROR - Nieobs³ugiwany format wyjœciowy dla ImageMagick: webm
+2025-04-04 12:38:14,739 - ERROR - B³¹d konwersji: data\zdjecia\file_example_PNG_2100kB.png
+2025-04-04 12:38:14,739 - INFO - Zakoñczono: 4/6 plików przekonwertowanych pomyœlnie
+2025-04-04 12:38:21,857 - INFO - Rozpoczêcie konwersji 6 plików do formatu webp
+2025-04-04 12:39:03,005 - INFO - Konwersja udana: data\filmy\file_example_AVI_1280_1_5MG.avi -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-123821-file_example_AVI_1280_1_5MG.webp
+2025-04-04 12:39:45,512 - INFO - Konwersja udana: data\filmy\file_example_MP4_1280_10MG.mp4 -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-123903-file_example_MP4_1280_10MG.webp
+2025-04-04 12:39:45,554 - ERROR - B³¹d FFmpeg: ffmpeg version 7.1.1-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+Input #0, mp3, from 'data\muzyka\file_example_MP3_2MG.mp3':
+  Metadata:
+    Encoded by      : LAME in FL Studio 20
+    BPM (beats per minute): 120
+    date            : 2018
+  Duration: 00:00:53.94, start: 0.025057, bitrate: 320 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 320 kb/s
+      Metadata:
+        encoder         : LAME3.100
+Output #0, webp, to 'C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-123945-file_example_MP3_2MG.webp':
+[out#0/webp @ 000001df930445c0] Output file does not contain any stream
+Error opening output file C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-123945-file_example_MP3_2MG.webp.
+Error opening output files: Invalid argument
+
+2025-04-04 12:39:45,555 - ERROR - B³¹d konwersji: data\muzyka\file_example_MP3_2MG.mp3
+2025-04-04 12:39:45,628 - ERROR - B³¹d FFmpeg: ffmpeg version 7.1.1-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 14.2.0 (Rev1, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint
+  libavutil      59. 39.100 / 59. 39.100
+  libavcodec     61. 19.101 / 61. 19.101
+  libavformat    61.  7.100 / 61.  7.100
+  libavdevice    61.  3.100 / 61.  3.100
+  libavfilter    10.  4.100 / 10.  4.100
+  libswscale      8.  3.100 /  8.  3.100
+  libswresample   5.  3.100 /  5.  3.100
+  libpostproc    58.  3.100 / 58.  3.100
+[aist#0:0/pcm_s16le @ 0000023ad4728400] Guessed Channel Layout: stereo
+Input #0, wav, from 'data\muzyka\file_example_WAV_2MG.wav':
+  Metadata:
+    BPM (beats per minute): 120
+    Encoded by      : LAME in FL Studio 20
+    date            : 2018
+  Duration: 00:00:11.93, bitrate: 1411 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 44100 Hz, stereo, s16, 1411 kb/s
+Output #0, webp, to 'C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-123945-file_example_WAV_2MG.webp':
+[out#0/webp @ 0000023ad42a7800] Output file does not contain any stream
+Error opening output file C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-123945-file_example_WAV_2MG.webp.
+Error opening output files: Invalid argument
+
+2025-04-04 12:39:45,628 - ERROR - B³¹d konwersji: data\muzyka\file_example_WAV_2MG.wav
+2025-04-04 12:39:48,453 - INFO - Konwersja udana: data\zdjecia\file_example_JPG_2500kB.jpg -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-123945-file_example_JPG_2500kB.webp
+2025-04-04 12:39:48,845 - INFO - Konwersja udana: data\zdjecia\file_example_PNG_2100kB.png -> C:\Users\jakub\OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4\converted\20250404-123948-file_example_PNG_2100kB.webp
+2025-04-04 12:39:48,848 - INFO - Zakoñczono: 4/6 plików przekonwertowanych pomyœlnie

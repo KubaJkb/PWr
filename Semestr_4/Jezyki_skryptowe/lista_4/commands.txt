@@ -1,0 +1,33 @@
+cd OneDrive\O_Studia\4_Sem\Jezyki_skryptowe\JS_lab\lista4
+
+------------- ZADANIE 1 -------------
+
+python I_env_vars.py
+python I_env_vars.py USER
+
+------------- ZADANIE 2 -------------
+
+python II_path.py list
+python II_path.py executables
+
+------------- ZADANIE 3 -------------
+
+python III_tail.py data\calineczka.txt
+python III_tail.py --follow data\test.txt
+type data\calineczka.txt | python III_tail.py
+type data\calineczka.txt | python III_tail.py -n 3
+type data\calineczka.txt | python III_tail.py data\test.txt --lines 5 --follow
+type data\calineczka.txt | python III_tail.py data\test.txt --follow
+
+------------- ZADANIE 4 -------------
+
+python IV_processor.py data\txt
+
+------------- ZADANIE 5 -------------
+
+winget install Gyan.FFmpeg
+winget install ImageMagick.Q16-HDRI
+
+python V_mediaconvert.py data webm
+python V_mediaconvert.py data webp
+
