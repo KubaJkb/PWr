@@ -1,0 +1,4 @@
+Tree in prefix form:
++ 1 2
+Tree in prefix form:
++ 1 2

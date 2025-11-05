@@ -1,0 +1,4 @@
+Tree in prefix form:
+/ 1 sin 4
+Errors:
+ - Nie mozna dzielic przez liczby ujemne
