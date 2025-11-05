@@ -1,0 +1,25 @@
+Listy zadañ z programowania w assemblerze MIPS32
+
+Lista 0: 
+Zapoznanie siê z pojêciami rejestru i typami rejestrów, piramid¹ pamiêci, cyklem pracy procesora oraz z symulatorem MARS. Uruchomiæ dowolny program w trybie symulacji ci¹g³ej i krokowej.
+
+Lista 1:
+Proszê napisaæ program wyznaczaj¹cy wartoœæ wielomianu trzeciego stopnia dla zadanych parametrów a,b,c,d oraz x. Postaæ wielomianu: y = ax^3 + bx^2 +cx +d. 
+
+Lista 2:
+Proszê napisaæ program, który poprosi u¿ytkownika o wartoœæ N>0, po czym wyliczy i wyœwietli wartosæ N! (silnia). Zabezpieczyæ program przed problemem nadmiaru. Program napisaæ w dwóch wersjach "do-while" i "while-do". Opdowiedzieæ na pytanie: dla jakiej maksymalnej wartoœci N program podaje poprawn¹ wartoœæ N!
+
+Lista 3:
+Proszê napisaæ program, który poprosi o wprowadzneie wartoœci N<100, nastêpnie wczyta z klawiatury N liczb ca³kowitych, posortuje je w porz¹dku rosn¹cym i wyœwietli posortowany ci¹g liczb na ekranie (najlepiej oddzielonych przecinkami). Algorytm sortowania: b¹belkowe. 
+
+Napisaæ dwie wersje powy¿szego programu:
+A.) bez wywo³ania podprocedur. Wyró¿niona jest jedynie procedura Sortuj wywo³ywana z pomiêdzy ci¹gu instrukcji wprowadzania danych i wydruku wyników.
+
+B.) z wywo³ywaniem podprocedur. Wyró¿nione s¹ procedury Sortuj i Zamieñ. Procedura zamieñ zamienia miejscami dwie liczby i jest wywo³ywana przez procedurê Sortuj, gdy nale¿y zmieniæ kolejnoœæ analizowanaych dwóch liczb. Procedura Sortuj wywo³ywana jest jak w wersji bez podprocedur. Uwaga na zawartoœæ rejestru powrotu ($ra).
+
+Dla chêtnych: procedurê zamiany miejscami dwóch liczb napisaæ bez wykorzystania dodatkowego bufora.
+
+Lista 4:
+Proszê napisaæ program poznwalaj¹cy wprowadziæ do pamiêci dwa wektorzy rzadkie, po czym wylicza ich iloczyn skalarny. Wektor rzadki w najprostszej wersji mo¿e byæ przechowywany w pamiêci w postaci pary wektorów - wektora wartoœci i wektora porz¹dku o tej samej liczbie wymiarów. Rozwi¹zania bardziej oszczêdne pamiêciowo bêd¹ wy¿ej punktowane.
+
+=== EOL ===
