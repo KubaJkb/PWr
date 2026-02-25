@@ -1,0 +1,90 @@
+﻿@model WebStore.Models.Article
+
+@{
+    ViewData["Title"] = "Edycja";
+}
+
+<h1>Edycja towaru</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group mb-3">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="CategoryId" class="control-label"></label>
+                <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="ExpirationDate" class="control-label"></label>
+                <input asp-for="ExpirationDate" class="form-control" />
+                <span asp-validation-for="ExpirationDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3 border p-3 rounded">
+                <label class="control-label fw-bold mb-2">Zdjęcie</label>
+                
+                @if (!string.IsNullOrEmpty(Model.ImageName))
+                {
+                    <div class="mb-3">
+                        <img src="~/images/@Model.ImageName" class="img-thumbnail" style="max-height: 150px;" alt="Obecne zdjęcie" />
+                        <div class="form-check mt-2">
+                            <input class="form-check-input" type="checkbox" id="deleteImage" name="deleteImage" value="true">
+                            <label class="form-check-label text-danger" for="deleteImage">
+                                Usuń obecne zdjęcie
+                            </label>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="mb-3 text-muted">Brak zdjęcia</div>
+                }
+
+                <label class="form-label text-muted small">Zmień lub dodaj zdjęcie:</label>
+                <input type="file" name="file" class="form-control" onchange="previewFile(event)" accept="image/*" />
+                
+                <div class="mt-3">
+                     <img id="preview" src="#" alt="Podgląd nowego" style="max-width: 200px; display: none; border: 1px dashed #ccc; padding: 5px;" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Zapisz" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Anuluj</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
+    <script>
+        var previewFile = function (event) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                var output = document.getElementById('preview');
+                output.src = reader.result;
+                output.style.display = "block";
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        };
+    </script>
+}

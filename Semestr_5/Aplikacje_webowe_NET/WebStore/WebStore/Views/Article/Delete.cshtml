@@ -1,0 +1,36 @@
+﻿@model WebStore.Models.Article
+@{ ViewData["Title"] = "Usuń"; }
+
+<h1>Usuń towar</h1>
+<h3>Czy na pewno chcesz usunąć ten towar?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Name)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Name)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Price)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Price)</dd>
+
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Category)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Category.Name)</dd>
+
+        <dt class="col-sm-2">Zdjęcie</dt>
+        <dd class="col-sm-10">
+            @if (Model.ImageName != null)
+            {
+                <img src="~/images/@Model.ImageName" class="img-fluid rounded" style="max-width: 300px;" alt="@Model.Name" />
+            }
+            else
+            {
+                <img src="~/images/NoImage.png" class="img-fluid rounded" style="max-width: 300px;" alt="Brak zdjęcia" />
+            }
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Usuń" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Anuluj</a>
+    </form>
+</div>

@@ -1,0 +1,83 @@
+﻿@model IEnumerable<WebStore.Models.CartItem>
+
+@{
+    ViewData["Title"] = "Twój Koszyk";
+    decimal total = Model.Sum(x => x.Value);
+}
+
+<h1 class="mb-4">Twój Koszyk</h1>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info text-center">
+        <h4>Twój koszyk jest pusty!</h4>
+        <p>Przejdź do <a asp-action="Index">sklepu</a>, aby dodać produkty.</p>
+    </div>
+}
+else
+{
+    <table class="table table-hover align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>Produkt</th>
+                <th class="text-center">Cena</th>
+                <th class="text-center">Ilość</th>
+                <th class="text-center">Wartość</th>
+                <th class="text-center">Akcje</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            @{
+                                string imagePath = item.Article.ImageName != null
+                                    ? "/images/" + item.Article.ImageName
+                                    : "/images/NoImage.png";
+                            }
+                            <img src="@imagePath" alt="@item.Article.Name" style="width: 50px; height: 50px; object-fit: cover; margin-right: 15px;" class="rounded">
+                            <div>
+                                <div class="fw-bold">@item.Article.Name</div>
+                                <div class="text-muted small">@item.Article.Category?.Name</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="text-center">@item.Article.Price.ToString("N2") zł</td>
+                    <td class="text-center">
+                        <div class="btn-group btn-group-sm">
+                            <a asp-action="Decrease" asp-route-id="@item.Article.Id" class="btn btn-outline-secondary">-</a>
+                            <span class="btn btn-light disabled" style="width: 40px; color: black;">@item.Quantity</span>
+                            <a asp-action="Increase" asp-route-id="@item.Article.Id" class="btn btn-outline-secondary">+</a>
+                        </div>
+                    </td>
+                    <td class="text-center fw-bold">@item.Value.ToString("N2") zł</td>
+                    <td class="text-center">
+                        <a asp-action="Remove" asp-route-id="@item.Article.Id" class="btn btn-danger btn-sm">Usuń</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot class="table-light">
+            <tr>
+                <td colspan="3" class="text-end fw-bold fs-5">Razem do zapłaty:</td>
+                <td class="text-center fw-bold fs-5 text-success">@total.ToString("N2") zł</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="d-flex justify-content-between mt-4">
+        <a asp-action="Index" class="btn btn-outline-secondary">← Kontynuuj zakupy</a>
+        
+        @if (User.Identity.IsAuthenticated)
+        {
+             <a asp-action="Order" class="btn btn-success btn-lg">Złóż zamówienie</a>
+        }
+        else
+        {
+             <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-primary btn-lg">Zaloguj się, aby zamówić</a>
+        }
+    </div>
+}

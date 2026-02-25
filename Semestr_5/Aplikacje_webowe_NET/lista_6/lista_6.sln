@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad1_Tuple", "Zad1_Tuple\Zad1_Tuple.csproj", "{E0B707CA-AA2C-49CE-AEF0-52B112C5694C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad2_ClassVar", "Zad2_ClassVar\Zad2_ClassVar.csproj", "{953B88EB-3FD7-44CE-AB33-D8EA9E245200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad3_Arrays", "Zad3_Arrays\Zad3_Arrays.csproj", "{61018123-0628-4B0A-847B-C74AF50AC66E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad4_AnonTypes", "Zad4_AnonTypes\Zad4_AnonTypes.csproj", "{E79E5BDA-2A57-480E-85EC-0071E9C3ADF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad5_DrawCard", "Zad5_DrawCard\Zad5_DrawCard.csproj", "{5CB5B241-8CAD-42CD-B4B7-29C125761160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zad6_CountMyTypes", "Zad6_CountMyTypes\Zad6_CountMyTypes.csproj", "{D635474B-586E-4459-A6C0-34ECD0F09D0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0B707CA-AA2C-49CE-AEF0-52B112C5694C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0B707CA-AA2C-49CE-AEF0-52B112C5694C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0B707CA-AA2C-49CE-AEF0-52B112C5694C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0B707CA-AA2C-49CE-AEF0-52B112C5694C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{953B88EB-3FD7-44CE-AB33-D8EA9E245200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{953B88EB-3FD7-44CE-AB33-D8EA9E245200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{953B88EB-3FD7-44CE-AB33-D8EA9E245200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{953B88EB-3FD7-44CE-AB33-D8EA9E245200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61018123-0628-4B0A-847B-C74AF50AC66E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61018123-0628-4B0A-847B-C74AF50AC66E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61018123-0628-4B0A-847B-C74AF50AC66E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61018123-0628-4B0A-847B-C74AF50AC66E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E79E5BDA-2A57-480E-85EC-0071E9C3ADF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E79E5BDA-2A57-480E-85EC-0071E9C3ADF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E79E5BDA-2A57-480E-85EC-0071E9C3ADF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E79E5BDA-2A57-480E-85EC-0071E9C3ADF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CB5B241-8CAD-42CD-B4B7-29C125761160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CB5B241-8CAD-42CD-B4B7-29C125761160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CB5B241-8CAD-42CD-B4B7-29C125761160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CB5B241-8CAD-42CD-B4B7-29C125761160}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D635474B-586E-4459-A6C0-34ECD0F09D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D635474B-586E-4459-A6C0-34ECD0F09D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D635474B-586E-4459-A6C0-34ECD0F09D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D635474B-586E-4459-A6C0-34ECD0F09D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C430402B-510E-4F1E-BE88-76B060C0D51C}
+	EndGlobalSection
+EndGlobal

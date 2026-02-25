@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="toolbar">
+    <h1>Lista towarów</h1>
+    <button class="btn-add" (click)="openAddModal()">Dodaj nowy towar</button>
+  </div>
+
+  <div class="grid">
+    @for (item of articles(); track item.id) {
+      <app-article-item 
+        [article]="item" 
+        (deleteRequest)="onDeleteArticle($event)"
+        (editRequest)="onEditArticle($event)">
+      </app-article-item>
+    }
+  </div>
+
+  @if (isModalOpen()) {
+    <app-add-article 
+      [dataToEdit]="editingArticle()" 
+      (close)="closeModal()">
+    </app-add-article>
+  }
+</div>

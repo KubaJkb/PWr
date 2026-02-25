@@ -1,0 +1,6 @@
+ButtonHandler	KEYWORD1
+CallbackFunction	KEYWORD1
+begin	KEYWORD2
+onShortPress	KEYWORD2
+onLongPress	KEYWORD2
+process	KEYWORD2

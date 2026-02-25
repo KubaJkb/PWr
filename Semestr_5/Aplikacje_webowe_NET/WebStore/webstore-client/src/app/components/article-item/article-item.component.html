@@ -1,0 +1,18 @@
+<div class="card">
+  <img 
+    [src]="'http://localhost:5168/images/' + (article().imageName ? article().imageName : 'NoImage.png')" 
+    class="card-img" 
+    alt="img"
+    loading="lazy">
+    
+  <div class="card-body">
+    <h5 class="card-title">{{ article().name }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ article().category?.name }}</h6>
+    <div class="price">{{ article().price }} PLN</div>
+    <div class="actions">
+      <a [routerLink]="['/shop/article', article().id]" class="btn-details">Szczegóły</a>
+      <button class="btn-edit" (click)="onEdit()">Edytuj</button>
+      <button class="btn-delete" (click)="onDelete()">Usuń</button>
+    </div>
+  </div>
+</div>

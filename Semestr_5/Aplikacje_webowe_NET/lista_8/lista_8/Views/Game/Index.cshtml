@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Zgadywanka";
+}
+
+<div class="text-center mt-5">
+    <h1 class="display-4">Gra w Zgadywanie</h1>
+    <hr />
+
+    <div class="p-5 rounded shadow-lg @ViewBag.CssClass">
+
+        @if (ViewBag.UserGuess != null)
+        {
+            <div class="display-1 fw-bold mb-3">@ViewBag.UserGuess</div>
+        }
+
+        <h2 class="mb-3">@ViewBag.Message</h2>
+        <p class="lead">@ViewBag.SubMessage</p>
+    </div>
+
+    <div class="mt-4 text-muted">
+        <p>Sterowanie przez pasek adresu:</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><code>/Set,10,50</code> (zakres min,max)</li>
+            <li class="list-inline-item"><code>/Draw</code> (losuj)</li>
+            <li class="list-inline-item"><code>/Guess,12</code> (zgaduj)</li>
+        </ul>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary btn-sm">Powrót do Home</a>
+    </div>
+</div>

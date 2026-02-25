@@ -1,0 +1,42 @@
+﻿@page "{id:int}"
+@model WebStore.Pages.Shop.DetailsModel
+@{ ViewData["Title"] = Model.Article.Name; }
+
+<div class="container mt-5">
+    <div class="card shadow-sm border-0">
+        <div class="row g-0">
+            <div class="col-md-6 bg-light d-flex align-items-center justify-content-center" style="min-height: 400px;">
+                @{
+                    string imagePath = Model.Article.ImageName != null
+                    ? "/images/" + Model.Article.ImageName
+                    : "/images/NoImage.png";
+                }
+                <img src="@imagePath" class="img-fluid rounded-start" alt="@Model.Article.Name" style="max-height: 400px; object-fit: contain;">
+            </div>
+
+            <div class="col-md-6">
+                <div class="card-body p-5">
+                    <div class="mb-2">
+                        <span class="badge bg-secondary">@Model.Article.Category?.Name</span>
+                    </div>
+
+                    <h1 class="card-title display-5 fw-bold text-dark">@Model.Article.Name</h1>
+                    <h3 class="text-primary my-4">@Model.Article.Price.ToString("N2") PLN</h3>
+
+                    <p class="card-text text-muted">
+                        Data ważności: @Model.Article.ExpirationDate.ToShortDateString()
+                    </p>
+
+                    <div class="d-grid gap-2 mt-5">
+                        <button class="btn btn-success btn-lg" disabled title="Funkcja dostępna wkrótce">
+                            🛒 Dodaj do koszyka
+                        </button>
+                        <a asp-page="./Index" class="btn btn-outline-secondary">
+                            Wróć do sklepu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

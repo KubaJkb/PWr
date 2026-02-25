@@ -1,0 +1,24 @@
+@if (article(); as item) {
+  <div class="details-container">
+    <h2>{{ item.name }}</h2>
+    <div class="info">
+      <div class="image-section">
+        <img 
+            [src]="'http://localhost:5168/images/' + (item.imageName ? item.imageName : 'NoImage.png')" 
+            [alt]="item.name"
+            class="detail-img">
+      </div>
+      <div class="data-section">
+        <p><strong>Kategoria:</strong> {{ item.category?.name }}</p>
+        <p><strong>Cena:</strong> <span class="price">{{ item.price }} PLN</span></p>
+        <p><strong>Data ważności:</strong> {{ item.expirationDate | date:'shortDate' }}</p>
+        
+        <div class="actions">
+            <button (click)="goBack()">Powrót do listy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+} @else {
+  <p>Ładowanie danych...</p>
+}

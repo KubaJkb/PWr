@@ -1,0 +1,42 @@
+﻿@page
+@model WebStore.Pages.Articles.IndexModel
+@{ ViewData["Title"] = "Lista towarów"; }
+
+<h1 class="mb-4">Lista towarów</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-success">Dodaj nowy towar</a>
+</p>
+
+<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+    @foreach (var item in Model.Articles)
+    {
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                @{
+                    string imagePath = item.ImageName != null 
+                        ? "/images/" + item.ImageName 
+                        : "/images/NoImage.png";
+                }
+                
+                <img src="@imagePath" class="card-img-top" alt="@item.Name" 
+                     style="height: 200px; object-fit: cover;">
+
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text text-muted">
+                        Kategoria: <strong>@item.Category?.Name</strong><br/>
+                        Cena: <strong class="text-success">@item.Price.ToString("N2") PLN</strong>
+                    </p>
+                </div>
+                <div class="card-footer bg-white border-top-0">
+                    <div class="d-grid gap-2">
+                        <a asp-page="./Details" asp-route-id="@item.Id" class="btn btn-outline-info btn-sm">Szczegóły</a>
+                        <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-outline-warning btn-sm">Edytuj</a>
+                        <a asp-page="./Delete" asp-route-id="@item.Id" class="btn btn-outline-danger btn-sm">Usuń</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

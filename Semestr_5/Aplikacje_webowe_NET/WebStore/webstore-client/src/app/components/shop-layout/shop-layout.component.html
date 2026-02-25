@@ -1,0 +1,27 @@
+<div class="layout-container">
+  <aside class="sidebar">
+    <h3>Kategorie</h3>
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/shop" 
+             [routerLinkActiveOptions]="{exact: true}" 
+             routerLinkActive="active">
+            Wszystkie
+          </a>
+        </li>
+        @for (cat of categories; track cat.id) {
+          <li>
+            <a [routerLink]="['/shop/category', cat.id]" 
+               routerLinkActive="active">
+              {{ cat.name }}
+            </a>
+          </li>
+        }
+      </ul>
+    </nav>
+  </aside>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

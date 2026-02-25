@@ -1,0 +1,6 @@
+flask
+RPi.GPIO
+adafruit-circuitpython-neopixel
+mfrc522
+pillow
+numpy

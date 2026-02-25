@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Rozwiązanie równania";
+}
+
+<div class="text-center mt-5">
+    <h1>Rozwiązywanie równania kwadratowego</h1>
+    <h3 class="text-muted">Równanie: @ViewBag.Equation</h3>
+
+    <hr />
+
+    <div class="p-4 rounded shadow-sm @ViewBag.CssClass">
+        <h2>@ViewBag.Message</h2>
+    </div>
+
+    <div class="mt-4">
+        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Powrót do strony głównej</a>
+    </div>
+</div>

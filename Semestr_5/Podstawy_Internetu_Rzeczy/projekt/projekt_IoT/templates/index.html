@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasyno Pi</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header z logo i balansem -->
+        <header>
+            <h1>🎰 KASYNO Pi 🎲</h1>
+            <div id="user-info" class="user-info hidden">
+                <span class="balance-label">Saldo:</span>
+                <span id="balance" class="balance">0</span>
+                <span class="currency">$</span>
+                <button id="logout-btn" class="btn-logout">Wyloguj</button>
+            </div>
+        </header>
+
+        <!-- Panel logowania -->
+        <div id="login-panel" class="login-panel">
+            <div class="rfid-icon">💳</div>
+            <h2>Przyłóż kartę RFID</h2>
+            <p>aby się zalogować i rozpocząć grę</p>
+            <div class="loading-dots">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <!-- Panel gier -->
+        <div id="games-panel" class="games-panel hidden">
+            <!-- Slots -->
+            <div class="game-card" data-game="slots">
+                <div class="game-icon">🎰</div>
+                <h3>Sloty</h3>
+                <p>Wylosuj 3 symbole i wygraj!</p>
+                <div class="game-cost">Koszt: <strong>10$</strong></div>
+                <button class="btn-play" onclick="playSlots()">GRAJ</button>
+            </div>
+
+            <!-- Ruletka -->
+            <div class="game-card" data-game="roulette">
+                <div class="game-icon">🎡</div>
+                <h3>Ruletka</h3>
+                <p>Postaw na kolor lub liczbę!</p>
+                <div class="game-cost">Koszt: <strong>20$</strong></div>
+                <div class="roulette-options">
+                    <select id="bet-type" onchange="updateBetOptions()">
+                        <option value="color">Kolor</option>
+                        <option value="even_odd">Parzyste/Nieparzyste</option>
+                        <option value="half">1-18 / 19-36</option>
+                    </select>
+                    <select id="bet-value">
+                        <option value="czerwony">Czerwony</option>
+                        <option value="czarny">Czarny</option>
+                    </select>
+                </div>
+                <button class="btn-play" onclick="playRoulette()">GRAJ</button>
+            </div>
+
+            <!-- Mnożnik -->
+            <div class="game-card" data-game="multiplier">
+                <div class="game-icon">✖️</div>
+                <h3>Mnożnik</h3>
+                <p>Wylosuj mnożnik i pomnóż stawkę!</p>
+                <div class="game-cost">Koszt: <strong>15$</strong></div>
+                <button class="btn-play" onclick="playMultiplier()">GRAJ</button>
+            </div>
+        </div>
+
+        <!-- Overlay gry -->
+        <div id="game-overlay" class="game-overlay hidden">
+            <div class="game-modal">
+                <div id="game-animation" class="game-animation">
+                    <div class="spinner"></div>
+                    <p>Losowanie...</p>
+                </div>
+                <div id="game-result" class="game-result hidden">
+                    <div id="result-icon" class="result-icon"></div>
+                    <h2 id="result-title"></h2>
+                    <p id="result-amount"></p>
+                    <button class="btn-close" onclick="closeResult()">OK</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Historia gier -->
+        <div id="history-panel" class="history-panel hidden">
+            <h3>📜 Historia gier</h3>
+            <div id="history-list" class="history-list"></div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

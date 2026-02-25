@@ -1,0 +1,54 @@
+﻿@page "{id:int}"
+@model WebStore.Pages.Articles.EditModel
+@{ ViewData["Title"] = "Edycja"; }
+
+<h1>Edycja towaru</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Article.Id" />
+            <input type="hidden" asp-for="Article.ImageName" />
+
+            <div class="form-group mb-3">
+                <label asp-for="Article.Name" class="control-label"></label>
+                <input asp-for="Article.Name" class="form-control" />
+                <span asp-validation-for="Article.Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Article.Price" class="control-label"></label>
+                <input asp-for="Article.Price" class="form-control" />
+                <span asp-validation-for="Article.Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Article.CategoryId" class="control-label"></label>
+                <select asp-for="Article.CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+                <span asp-validation-for="Article.CategoryId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Article.ExpirationDate" class="control-label"></label>
+                <input asp-for="Article.ExpirationDate" class="form-control" />
+                <span asp-validation-for="Article.ExpirationDate" class="text-danger"></span>
+            </div>
+
+             <div class="form-group mb-3">
+                <label class="control-label">Zdjęcie (zostaw puste, aby nie zmieniać)</label>
+                <input type="file" asp-for="UploadedFile" class="form-control" accept="image/*" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Zapisz" class="btn btn-primary" />
+                <a asp-page="./Index" class="btn btn-secondary">Anuluj</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
